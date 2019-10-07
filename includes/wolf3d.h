@@ -6,7 +6,7 @@
 /*   By: pchambon <pchambon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 14:25:49 by pchambon          #+#    #+#             */
-/*   Updated: 2019/09/27 15:41:35 by pchambon         ###   ########.fr       */
+/*   Updated: 2019/10/07 14:19:01 by pchambon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 # include <stdio.h>
 
 # define BUFF_SIZE 4086
-# define X_MAX 2560
-# define Y_MAX 1600
+# define X_MAX 1080
+# define Y_MAX 720
 # define ROT_SPEED 0.12
 
 typedef	struct	s_point
