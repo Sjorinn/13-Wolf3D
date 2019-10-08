@@ -6,7 +6,7 @@
 /*   By: pchambon <pchambon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 14:24:34 by pchambon          #+#    #+#             */
-/*   Updated: 2019/09/27 15:41:35 by pchambon         ###   ########.fr       */
+/*   Updated: 2019/10/07 14:55:17 by pchambon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,10 @@ int		error(int ret)
 	if (ret == 2)
 		perror("Wolf3d error : File not a Wolf3d map.");
 	if (ret == 3)
-		perror("Wolf3d error : Failed to load textures.");
+	{
+		perror("Wolf3d error : Failed to load textures ");
+		exit(0);
+	}
 	return (0);
 }
 
