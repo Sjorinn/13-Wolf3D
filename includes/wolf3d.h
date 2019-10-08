@@ -6,7 +6,7 @@
 /*   By: pchambon <pchambon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 14:25:49 by pchambon          #+#    #+#             */
-/*   Updated: 2019/10/07 14:19:01 by pchambon         ###   ########.fr       */
+/*   Updated: 2019/10/08 15:44:47 by pchambon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,6 +105,7 @@ typedef	struct	s_param
 
 char			*open_fd(char *filename);
 void			print_data(int **data);
+void			fail_text(t_param *p);
 int				error(int ret);
 
 /*

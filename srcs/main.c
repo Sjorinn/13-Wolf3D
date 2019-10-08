@@ -6,7 +6,7 @@
 /*   By: pchambon <pchambon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 14:24:34 by pchambon          #+#    #+#             */
-/*   Updated: 2019/10/07 14:55:17 by pchambon         ###   ########.fr       */
+/*   Updated: 2019/10/08 15:47:50 by pchambon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,12 @@ void	print_data(int **data)
 	ft_putendl("##################################################");
 }
 
+void	fail_text(t_param *p)
+{
+	ft_putendl_fd("Wolf3d error : Failed to load textures.", 2);
+	free_all(p);
+}
+
 int		error(int ret)
 {
 	if (ret == 0)
@@ -75,11 +81,6 @@ int		error(int ret)
 		perror("Wolf3d error");
 	if (ret == 2)
 		perror("Wolf3d error : File not a Wolf3d map.");
-	if (ret == 3)
-	{
-		perror("Wolf3d error : Failed to load textures ");
-		exit(0);
-	}
 	return (0);
 }
 

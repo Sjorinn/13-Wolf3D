@@ -6,7 +6,7 @@
 /*   By: pchambon <pchambon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/26 10:48:23 by pchambon          #+#    #+#             */
-/*   Updated: 2019/09/27 15:41:35 by pchambon         ###   ########.fr       */
+/*   Updated: 2019/10/08 15:45:31 by pchambon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ int		open_win(char *file)
 	init_key(p.key);
 	init_cam(p.cam);
 	if (init_tex(tex, p.mlx) == 0)
-		error(3);
+		fail_text(&p);
 	raycaster(p.data, p.cam, &p);
 	print_data(p.data);
 	window(&p);
